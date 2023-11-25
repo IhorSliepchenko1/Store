@@ -1,0 +1,95 @@
+.header {
+  background: var(--Black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 20px;
+
+  &__nav {
+    display: flex;
+    gap: 29px;
+  }
+
+  &__ul {
+    &:last-child {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  &__a {
+    color: var(--White);
+    font-family: var(--ff-oswl);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    &._active {
+      &::before {
+        width: 54px;
+      }
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0%;
+      background-color: var(--Main-Color-2);
+      height: 2px;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: var(--transition);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ul-reg {
+    display: flex;
+    gap: 12px;
+    margin-right: 31px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__like {
+    margin-right: 20px;
+  }
+
+  &__total {
+    margin-left: 11px;
+  }
+
+  &__info-title {
+    color: var(--White);
+    font-family: var(--ff-robt);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+  }
+
+  &__price {
+    color: var(--White);
+    font-family: var(--ff-robt);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.14px;
+  }
+}

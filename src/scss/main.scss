@@ -1,0 +1,25 @@
+// vendors
+@import "vendors/reset";
+
+// utils
+@import "utils/animations";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+// layout
+@import "layout/base";
+@import "layout/scroll";
+
+// components
+// & # ui kit
+// @import "components/UI/btn";
+
+// plugins
+// @import "plugins/swiper";
+
+// & # base
+@import "components/header";
+@import "components/footer";
+
+// & # pages

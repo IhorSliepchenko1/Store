@@ -1,0 +1,59 @@
+// -- ROBOT0 --
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("fonts/Roboto/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("fonts/Roboto/Roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// --OSWALD--
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Light"), local("Oswald-Light"),
+    url("fonts/Oswald/Oswald-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+    url("fonts/Oswald/Oswald-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+    url("fonts/Oswald/Oswald-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald DemiBold"), local("Oswald-DemiBold"),
+    url("fonts/Oswald/Oswald-Demi-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
