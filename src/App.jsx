@@ -6,7 +6,7 @@ function App() {
     <>
       <div className="wrapper">
         <Header />
-        <main className="main container">CONTENT</main>
+        <main className="main">CONTENT</main>
         <Footer />
       </div>
     </>

@@ -26,6 +26,7 @@
     line-height: normal;
     text-transform: uppercase;
     position: relative;
+
     &._active {
       &::before {
         width: 54px;
@@ -63,6 +64,10 @@
     margin-right: 31px;
   }
 
+  &__ul-search {
+    cursor: pointer;
+  }
+
   &__icons {
     display: flex;
     align-items: center;
@@ -71,6 +76,11 @@
 
   &__like {
     margin-right: 20px;
+    cursor: pointer;
+  }
+
+  &__shop {
+    cursor: pointer;
   }
 
   &__total {
