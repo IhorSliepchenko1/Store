@@ -5,15 +5,65 @@
   align-items: center;
   padding: 36px 20px;
 
-  &__nav {
+  &__backdrop {
+    background: rgba(47, 46, 46, 0.7);
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(120%);
+    display: none;
+    transition: var(--transition);
+    opacity: 0;
+
+    @include tablet {
+      display: block;
+    }
+
+    &._active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__logo {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .search-li {
     display: flex;
-    gap: 29px;
+    gap: 8px;
   }
 
   &__ul {
-    &:last-child {
-      display: flex;
-      gap: 8px;
+    display: flex;
+    gap: 29px;
+
+    @include tablet {
+      z-index: 2;
+      gap: 65px;
+      position: fixed;
+      width: 55%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--Black-2);
+      align-items: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+
+      @include mobile {
+        width: 75%;
+      }
+    }
+
+    &._active {
+      transform: translateX(0);
     }
   }
 
@@ -68,6 +118,12 @@
     cursor: pointer;
   }
 
+  .a-reg {
+    @include mobile {
+      display: none;
+    }
+  }
+
   &__icons {
     display: flex;
     align-items: center;
@@ -101,5 +157,35 @@
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.14px;
+  }
+}
+
+#header-burger {
+  color: var(--White);
+  cursor: pointer;
+  display: none;
+  margin-right: 25rem;
+  font-size: 33rem;
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    position: relative;
+    left: -70rem;
+  }
+}
+
+#header-close {
+  color: var(--White);
+  cursor: pointer;
+  display: none;
+  right: -150rem;
+  top: 20rem;
+  position: relative;
+  font-size: 33rem;
+
+  @include tablet {
+    display: block;
   }
 }
